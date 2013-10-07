@@ -1,0 +1,5 @@
+victoire_cms:
+    widgets:
+        text:
+            class: "Victoire\TextBundle\\Entity\\WidgetText"
+            name: text
