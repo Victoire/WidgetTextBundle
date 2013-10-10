@@ -9,7 +9,7 @@
 #}
 <div class="edit-widget">
 {% block form %}
-<form class="ajax" update="widget-{{id}}" method="POST" action="{{path('victoire_cms_widget_edit', {'id':id, 'type':'text'} )}}">
+<form class="ajax" update="widget-{{id}}" method="POST" action="{{path('victoire_cms_widget_edit', {'id':id, 'type':entity} )}}">
 {#Booya ! Replace this default rendering by your own form#}
 {{form_row(form)}}
 {{form_rest(form)}}

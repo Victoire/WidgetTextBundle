@@ -57,14 +57,15 @@ protected $container;
      * @param WidgetText $widget
      * @return form
      */
-    public function renderForm($form, $widget)
+    public function renderForm($form, $widget, $entity = null)
     {
         return $this->container->get('victoire_templating')->render(
             "VictoireTextBundle:Widget:text/edit.html.twig",
             array(
                 'widget' => $widget,
-                'form' => $form->createView(),
-                'id' => $widget->getId()
+                'form'   => $form->createView(),
+                'id'     => $widget->getId(),
+                'entity' => $entity
             ));
     }
 
@@ -90,17 +91,18 @@ protected $container;
      *
      * @return new form
      */
-    public function renderNewForm($form, $widget, $slot, $page)
+    public function renderNewForm($form, $widget, $slot, $page, $entity = null)
     {
 
         return $this->container->get('victoire_templating')->render(
             "VictoireTextBundle:Widget:text/new.html.twig",
             array(
-                "widget" => $widget,
-                'form' => $form->createView(),
-                "slot" => $slot,
+                "widget"          => $widget,
+                'form'            => $form->createView(),
+                "slot"            => $slot,
+                "entity"          => $entity,
                 "renderContainer" => true,
-                "page" => $page
+                "page"            => $page
             )
         );
     }
