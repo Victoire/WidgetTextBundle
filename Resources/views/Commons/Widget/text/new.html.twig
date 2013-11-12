@@ -9,7 +9,7 @@
 #}
 <div id="widget-{{slot}}" class="add-widget">
 {% block form %}
-    <form method="POST" action="{{path('victoire_cms_widget_new', {'page': page.id,'slot':slot, 'type':'text'} )}}">
+    <form method="POST" action="{{path('victoire_cms_widget_create', {'page': page.id,'slot':slot, 'type':'text', 'entity': entity} )}}">
     {#Replace this default rendering by your own form#}
     {{form_row(form)}}
     {{form_rest(form)}}
