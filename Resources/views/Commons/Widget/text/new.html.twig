@@ -11,7 +11,7 @@
 {% block form %}
     <form method="POST" action="{{path('victoire_cms_widget_create', {'page': page.id,'slot':slot, 'type':'text', 'entity': entity} )}}">
     {#Replace this default rendering by your own form#}
-    {{form_row(form)}}
+    {{form_row(form.content)}}
     {{form_rest(form)}}
 {% block submit %}
     <button class="btn btn-success" type="submit">{{ 'ok'|trans|desc('Ok') }}</button>

@@ -1,0 +1,9 @@
+{
+    "require_all":
+    {
+        "stylesheets":
+        {
+            "head": "@VictoireTextBundle/Resources/public/css/style.css"
+        }
+    }
+}

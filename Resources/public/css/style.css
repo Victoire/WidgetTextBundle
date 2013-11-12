@@ -1,0 +1,9 @@
+.icon.icon-text {
+    background-image: url('/bundles/victoiretext/images/icon-text-alt.png');
+    background-position: 0 0;
+}
+
+.dropdown-menu > li > a:hover > .icon.icon-text {
+    background-image: url('/bundles/victoiretext/images/icon-text-white.png');
+    background-position: 0 0;
+}
