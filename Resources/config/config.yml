@@ -3,3 +3,9 @@ victoire_cms:
         text:
             class: "Victoire\TextBundle\\Entity\\WidgetText"
             name: text
+
+jms_translation:
+    configs:
+        victoire_text_bundle:
+            dirs: ["@VictoireTextBundle"]
+            output_dir: "@VictoireTextBundle/Resources/translations"
