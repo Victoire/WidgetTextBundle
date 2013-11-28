@@ -21,8 +21,11 @@ class WidgetTextType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-                            ->add('content')
-                    ;
+            ->add('content', null, array(
+                'label' => 'widget_text.form.content.label'
+            ))
+            //
+            ;
     }
 
 
