@@ -36,7 +36,8 @@ class WidgetTextType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Victoire\TextBundle\Entity\WidgetText'
+            'data_class'         => 'Victoire\TextBundle\Entity\WidgetText',
+            'translation_domain' => 'victoire'
         ));
     }
 
