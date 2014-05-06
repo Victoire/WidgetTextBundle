@@ -20,5 +20,10 @@
         "psr-0": { "Victoire\\TextBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/TextBundle"
+    "target-dir": "Victoire/TextBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
 }
