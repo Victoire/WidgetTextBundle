@@ -1,7 +1,7 @@
 services:
-    victoire_cms.twig.widget_text_manager:
+    victoire_core.twig.widget_text_manager:
         class: Victoire\TextBundle\Widget\Manager\WidgetTextManager
         arguments: [@service_container]
 
     widget_text_manager:
-        alias: victoire_cms.twig.widget_text_manager
+        alias: victoire_core.twig.widget_text_manager

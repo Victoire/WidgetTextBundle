@@ -1,4 +1,4 @@
-victoire_cms:
+victoire_core:
     widgets:
         text:
             class: "Victoire\TextBundle\\Entity\\WidgetText"
