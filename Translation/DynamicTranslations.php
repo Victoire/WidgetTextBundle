@@ -7,14 +7,11 @@ use JMS\TranslationBundle\Model\FileSource;
 
 class DynamicTranslations implements TranslationContainerInterface
 {
-    /**
-     * usage example: new Message('example.keymap')->addSource('path/to/source/file', '514', '10'),
-     * @return array the keys to register in jms translation
-     */
     public static function getTranslationMessages()
     {
         return array(
-            new Message('widget.text.new.action.label'),
+            new Message('widget.text.new.action.label', 'victoire'),
+            new Message('modal.form.widget.type.text.label', 'victoire')
         );
     }
 }
