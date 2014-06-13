@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\TextBundle;
+namespace Victoire\Widget\TextBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -9,6 +9,6 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  * @author Thomas Beaujean
  *
  */
-class VictoireTextBundle extends Bundle
+class VictoireWidgetTextBundle extends Bundle
 {
 }

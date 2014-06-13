@@ -1,108 +1,45 @@
 <?php
 
-namespace Victoire\TextBundle\Widget\Manager;
+namespace Victoire\Widget\TextBundle\Widget\Manager;
 
 
-use Victoire\TextBundle\Form\WidgetTextType;
-use Victoire\TextBundle\Entity\WidgetText;
+use Victoire\Bundle\CoreBundle\Widget\Managers\BaseWidgetManager;
+use Victoire\Bundle\CoreBundle\Entity\Widget;
+use Victoire\Bundle\CoreBundle\Widget\Managers\WidgetManagerInterface;
 
-class WidgetTextManager
+/**
+ * CRUD operations on WidgetRedactor Widget
+ *
+ * The widget view has two parameters: widget and content
+ *
+ * widget: The widget to display, use the widget as you wish to render the view
+ * content: This variable is computed in this WidgetManager, you can set whatever you want in it and display it in the show view
+ *
+ * The content variable depends of the mode: static/businessEntity/entity/query
+ *
+ * The content is given depending of the mode by the methods:
+ *  getWidgetStaticContent
+ *  getWidgetBusinessEntityContent
+ *  getWidgetEntityContent
+ *  getWidgetQueryContent
+ *
+ * So, you can use the widget or the content in the show.html.twig view.
+ * If you want to do some computation, use the content and do it the 4 previous methods.
+ *
+ * If you just want to use the widget and not the content, remove the method that throws the exceptions.
+ *
+ * By default, the methods throws Exception to notice the developer that he should implements it owns logic for the widget
+ *
+ */
+class WidgetTextManager extends BaseWidgetManager implements WidgetManagerInterface
 {
-protected $container;
-
     /**
-     * constructor
+     * The name of the widget
      *
-     * @param ServiceContainer $container
+     * @return string
      */
-    public function __construct($container)
+    public function getWidgetName()
     {
-        $this->container = $container;
-    }
-
-    /**
-     * create a new WidgetText
-     * @param Page   $page
-     * @param string $slot
-     *
-     * @return $widget
-     */
-    public function newWidget($page, $slot)
-    {
-        $widget = new WidgetText();
-        $widget->setPage($page);
-        $widget->setslot($slot);
-
-        return $widget;
-    }
-    /**
-     * render the WidgetText
-     * @param Widget $widget
-     *
-     * @return widget show
-     */
-    public function render($widget)
-    {
-        return $this->container->get('victoire_templating')->render(
-            "VictoireTextBundle::show.html.twig",
-            array(
-                "widget" => $widget
-            )
-        );
-    }
-
-    /**
-     * render WidgetText form
-     * @param Form           $form
-     * @param WidgetText $widget
-     * @return form
-     */
-    public function renderForm($form, $widget, $entity = null)
-    {
-        return $this->container->get('victoire_templating')->render(
-            "VictoireTextBundle::edit.html.twig",
-            array(
-                'widget' => $widget,
-                'form'   => $form->createView(),
-                'id'     => $widget->getId(),
-                'entity' => $entity
-            ));
-    }
-
-    /**
-     * create a form with given widget
-     * @param WidgetText $widget
-     * @return $form
-     */
-    public function buildForm($widget, $entityName = null, $namespace = null)
-    {
-        $form = $this->container->get('form.factory')->create(new WidgetTextType($entityName, $namespace), $widget);
-
-        return $form;
-    }
-
-    /**
-     * create form new for WidgetText
-     * @param Form           $form
-     * @param WidgetText $widget
-     * @param string         $slot
-     * @param Page           $page
-     *
-     * @return new form
-     */
-    public function renderNewForm($form, $widget, $slot, $page, $entity = null)
-    {
-
-        return $this->container->get('victoire_templating')->render(
-            "VictoireTextBundle::new.html.twig",
-            array(
-                "widget"          => $widget,
-                'form'            => $form->createView(),
-                "slot"            => $slot,
-                "entity"          => $entity,
-                "renderContainer" => true,
-                "page"            => $page
-            )
-        );
+        return 'Text';
     }
 }
