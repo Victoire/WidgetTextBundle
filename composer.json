@@ -14,16 +14,17 @@
     "require": {
         "php"                                 : ">=5.3.3",
         "symfony/framework-bundle"            : "~2.3",
-        "victoire/cms-bundle"                 : "~0.1"
+        "victoire/victoire"                   : ">=0.1.4"
     },
     "autoload": {
-        "psr-0": { "Victoire\\TextBundle": "" }
+        "psr-0": { "Victoire\\Widget\\TextBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/TextBundle",
+    "target-dir": "Victoire/Widget/TextBundle",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.x-dev"
+            "dev-master": "0.1.x-dev",
+            "dev-feature/business-entity-template": "0.1.x-dev"
         }
     }
 }

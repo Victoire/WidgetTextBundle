@@ -1,5 +1,5 @@
 <?php
-namespace Victoire\TextBundle\Entity;
+namespace Victoire\Widget\TextBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\CoreBundle\Entity\Widget;
@@ -13,8 +13,6 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
  */
 class WidgetText extends Widget
 {
-    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
-
     /**
      * @var text
      *
@@ -45,6 +43,7 @@ class WidgetText extends Widget
     {
         return $this->content;
     }
+
     /**
      * Set secondary
      *
@@ -67,5 +66,4 @@ class WidgetText extends Widget
     {
         return $this->secondary;
     }
-
 }
