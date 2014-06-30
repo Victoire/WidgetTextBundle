@@ -3,6 +3,7 @@ services:
         class: Victoire\Widget\TextBundle\Widget\Manager\WidgetTextManager
         arguments: 
             - "@service_container"
+            - "Text"
 
     widget_text_manager:
         alias: victoire_core.twig.widget_text_manager
