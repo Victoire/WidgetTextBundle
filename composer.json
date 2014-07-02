@@ -23,8 +23,7 @@
     "target-dir": "Victoire/Widget/TextBundle",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.x-dev",
-            "dev-feature/business-entity-template": "0.1.x-dev"
+            "dev-master": "0.1.x-dev"
         }
     }
 }
