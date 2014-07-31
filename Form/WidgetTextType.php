@@ -2,11 +2,9 @@
 
 namespace Victoire\Widget\TextBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
-
 
 /**
  * WidgetText form type
@@ -20,13 +18,24 @@ class WidgetTextType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('content', null, array(
-            'label' => 'widget_text.form.content.label'
-        ));
+        $namespace = $options['namespace'];
+        $entityName = $options['entityName'];
+
+        if ($entityName !== null) {
+            if ($namespace === null) {
+                throw new \Exception('The namespace is mandatory if the entity_name is given.');
+            }
+        }
+        //choose form mode
+        if ($entityName === null) {
+            //if no entity is given, we generate the static form
+            $builder->add('content', null, array(
+                'label' => 'widget_text.form.content.label'
+            ));
+        }
 
         parent::buildForm($builder, $options);
     }
-
 
     /**
      * bind form to WidgetRedactor entity
@@ -41,7 +50,6 @@ class WidgetTextType extends WidgetType
             'translation_domain' => 'victoire'
         ));
     }
-
 
     /**
      * get form name
