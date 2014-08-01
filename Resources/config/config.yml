@@ -1,8 +1,8 @@
 victoire_core:
     widgets:
-        text:
+        Text:
             class: "Victoire\Widget\TextBundle\\Entity\\WidgetText"
-            name: text
+            name: Text
 
 jms_translation:
     configs:
