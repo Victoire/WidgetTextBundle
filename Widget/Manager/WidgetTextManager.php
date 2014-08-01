@@ -34,8 +34,8 @@ class WidgetTextManager extends BaseWidgetManager implements WidgetManagerInterf
 {
     /**
      * Get the static content of the widget
+     * @param Widget $widget
      *
-     * @param  Widget $widget
      * @return string The static content
      */
     protected function getWidgetStaticContent(Widget $widget)
@@ -47,13 +47,14 @@ class WidgetTextManager extends BaseWidgetManager implements WidgetManagerInterf
 
     /**
      * Get the business entity content
-     * @param  Widget   $widget
+     * @param Widget $widget
+     *
      * @return Ambigous <string, unknown, \Victoire\Bundle\CoreBundle\Widget\Managers\mixed, mixed>
      */
     protected function getWidgetBusinessEntityContent(Widget $widget)
     {
         //get the entity
-        $entity = $widget->getEntity();
+        $entity = $widget->getBusinessEntity();
 
         //display a generic content if no entity were specified
         if ($entity === null) {
@@ -80,7 +81,7 @@ class WidgetTextManager extends BaseWidgetManager implements WidgetManagerInterf
         //the result
         $content = '';
 
-        $entity = $widget->getEntity();
+        $entity = $widget->getBusinessEntity();
 
         if ($entity === null) {
             throw new \Exception('The widget ['.$widget->getId().'] has no entity to display.');
@@ -93,9 +94,9 @@ class WidgetTextManager extends BaseWidgetManager implements WidgetManagerInterf
 
     /**
      * Get the content for an entity and a widget given
+     * @param Widget  $widget
+     * @param unknown $entity
      *
-     * @param  Widget                                            $widget
-     * @param  unknown                                           $entity
      * @throws \Exception
      * @return \Victoire\Bundle\CoreBundle\Widget\Managers\mixed
      */
