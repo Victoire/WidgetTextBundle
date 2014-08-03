@@ -8,7 +8,7 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
 /**
  * WidgetText
  *
- * @ORM\Table("cms_widget_text")
+ * @ORM\Table("vic_widget_text")
  * @ORM\Entity
  */
 class WidgetText extends Widget
@@ -23,8 +23,8 @@ class WidgetText extends Widget
 
     /**
      * Set content
-     *
      * @param string $content
+     *
      * @return content
      */
     public function setContent($content)
@@ -46,8 +46,8 @@ class WidgetText extends Widget
 
     /**
      * Set secondary
-     *
      * @param string $secondary
+     *
      * @return secondary
      */
     public function setSecondary($secondary)
