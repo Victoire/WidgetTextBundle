@@ -43,27 +43,4 @@ class WidgetText extends Widget
     {
         return $this->content;
     }
-
-    /**
-     * Set secondary
-     * @param string $secondary
-     *
-     * @return secondary
-     */
-    public function setSecondary($secondary)
-    {
-        $this->secondary = $secondary;
-
-        return $this;
-    }
-
-    /**
-     * Get secondary
-     *
-     * @return string
-     */
-    public function getSecondary()
-    {
-        return $this->secondary;
-    }
 }
