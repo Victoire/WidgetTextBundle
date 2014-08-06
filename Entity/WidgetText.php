@@ -2,7 +2,7 @@
 namespace Victoire\Widget\TextBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Bundle\CoreBundle\Entity\Widget;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
 
 /**
@@ -24,7 +24,7 @@ class WidgetText extends Widget
     /**
      * Set content
      *
-     * @param string $content
+     * @param  string  $content
      * @return content
      */
     public function setContent($content)
@@ -47,7 +47,7 @@ class WidgetText extends Widget
     /**
      * Set secondary
      *
-     * @param string $secondary
+     * @param  string    $secondary
      * @return secondary
      */
     public function setSecondary($secondary)
