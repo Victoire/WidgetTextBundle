@@ -30,7 +30,8 @@ class WidgetTextType extends WidgetType
         if ($entityName === null) {
             //if no entity is given, we generate the static form
             $builder->add('content', null, array(
-                'label' => 'widget_text.form.content.label'
+                'label'    => 'widget_text.form.content.label',
+                'required' => true
             ));
         }
 
