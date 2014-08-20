@@ -13,8 +13,8 @@ class WidgetTextType extends WidgetType
 {
     /**
      * define form fields
-     * @param FormBuilderInterface $builder
-     * @param array $options
+     * @param FormBuilderInterface $builder
+     * @param array                $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -40,7 +40,7 @@ class WidgetTextType extends WidgetType
 
     /**
      * bind form to WidgetRedactor entity
-     * @param OptionsResolverInterface $resolver
+     * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
