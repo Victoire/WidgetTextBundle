@@ -48,7 +48,8 @@ class WidgetTextType extends WidgetType
 
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\TextBundle\Entity\WidgetText',
-            'translation_domain' => 'victoire'
+            'translation_domain' => 'victoire',
+            'widget'             => 'Text',
         ));
     }
 
