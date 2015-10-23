@@ -1,14 +1,18 @@
 {
     "name": "friendsofvictoire/text-widget",
     "type": "symfony-bundle",
-    "description": "Victoire Cms Text component",
-    "keywords": ["cms", "victoire", "text"],
-    "homepage": "http://appventus.com",
+    "description": "Victoire DCMS Text widget",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Text", "Plain"],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Paul Andrieux",
-            "email": "paul@appventus.com"
+            "email": "paul@victoire.io"
+        },
+        {
+            "name": "Leny Bernard",
+            "email": "leny@victoire.io"
         }
     ],
     "require": {
