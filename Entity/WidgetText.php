@@ -3,11 +3,11 @@ namespace Victoire\Widget\TextBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use JMS\Serializer\Annotation as Serializer;
-use Victoire\Bundle\WidgetBundle\Entity\Widget;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetText
+ * WidgetText.
  *
  * @ORM\Table("vic_widget_text")
  * @ORM\Entity
@@ -22,7 +22,7 @@ class WidgetText extends Widget
     protected $content;
 
     /**
-     * Set content
+     * Set content.
      * @param string $content
      *
      * @return string
@@ -35,7 +35,7 @@ class WidgetText extends Widget
     }
 
     /**
-     * Get content
+     * Get content.
      *
      * @return string
      */
