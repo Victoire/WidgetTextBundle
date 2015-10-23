@@ -23,6 +23,7 @@ class WidgetText extends Widget
 
     /**
      * Set content.
+     *
      * @param string $content
      *
      * @return string

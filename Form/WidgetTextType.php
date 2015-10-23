@@ -14,6 +14,7 @@ class WidgetTextType extends WidgetType
 {
     /**
      * define form fields.
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
      */
@@ -26,7 +27,7 @@ class WidgetTextType extends WidgetType
                 'content',
                 null,
                 [
-                    'label' => 'widget_text.form.content.label',
+                    'label'    => 'widget_text.form.content.label',
                     'required' => true
                 ]
             );
@@ -36,6 +37,7 @@ class WidgetTextType extends WidgetType
 
     /**
      * bind form to WidgetRedactor entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
