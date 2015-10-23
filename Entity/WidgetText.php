@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\TextBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;

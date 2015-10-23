@@ -28,11 +28,10 @@ class WidgetTextType extends WidgetType
                 null,
                 [
                     'label'    => 'widget_text.form.content.label',
-                    'required' => true
+                    'required' => true,
                 ]
             );
         }
-
     }
 
     /**
