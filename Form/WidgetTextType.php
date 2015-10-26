@@ -8,12 +8,13 @@ use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
 
 /**
- * WidgetText form type
+ * WidgetText form type.
  */
 class WidgetTextType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
      */
@@ -25,32 +26,32 @@ class WidgetTextType extends WidgetType
             $builder->add(
                 'content',
                 null,
-                array(
-                    'label' => 'widget_text.form.content.label',
-                    'required' => true
-                )
+                [
+                    'label'    => 'widget_text.form.content.label',
+                    'required' => true,
+                ]
             );
         }
-
     }
 
     /**
-     * bind form to WidgetRedactor entity
+     * bind form to WidgetRedactor entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\TextBundle\Entity\WidgetText',
             'translation_domain' => 'victoire',
             'widget'             => 'Text',
-        ));
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string
      */
