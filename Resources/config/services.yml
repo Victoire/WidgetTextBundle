@@ -10,5 +10,5 @@ services:
     victoire.widget.form.text:
         class: Victoire\Widget\TextBundle\Form\WidgetTextType
         tags:
-            - { name: form.type , alias: victoire_widget_form_text}
+            - { name: form.type }
 
