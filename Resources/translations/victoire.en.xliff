@@ -18,6 +18,14 @@
         <source>widget_text.form.content.label</source>
         <target>Text</target>
       </trans-unit>
+      <trans-unit>
+        <source>widget_text.form.excerpt.label</source>
+        <target>Truncate the text</target>
+      </trans-unit>
+      <trans-unit>
+        <source>widget_text.form.excerpt.placeholder</source>
+        <target>Enter a number or let the field empty to disable truncating</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

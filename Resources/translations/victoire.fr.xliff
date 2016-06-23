@@ -18,6 +18,14 @@
         <source>widget_text.form.content.label</source>
         <target>Texte</target>
       </trans-unit>
+      <trans-unit>
+        <source>widget_text.form.excerpt.label</source>
+        <target>Tronquer le texte</target>
+      </trans-unit>
+      <trans-unit>
+        <source>widget_text.form.excerpt.placeholder</source>
+        <target>Entrez un nombre ou laissez vide pour désactiver le tronquage</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

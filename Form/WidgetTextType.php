@@ -28,6 +28,14 @@ class WidgetTextType extends WidgetType
                     'required' => true,
                 ]
             );
+        } else {
+            $builder->add('excerpt', null, [
+                    'label'    => 'widget_text.form.excerpt.label',
+                    'attr'    => [
+                        'placeholder' => 'widget_text.form.excerpt.placeholder',
+                    ],
+                ]
+            );
         }
     }
 
