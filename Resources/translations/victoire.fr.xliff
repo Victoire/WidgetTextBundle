@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" target-language="fr" datatype="plaintext" original="not.available">
-    <header>
-      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
-      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
-    </header>
     <body>
-      <trans-unit id="11f3c9da413903ca58f415a9dcb4694107f78f7d" resname="modal.form.widget.type.text.label">
+      <trans-unit id="58893b8eccddb" resname="modal.form.widget.type.text.label">
         <source>modal.form.widget.type.text.label</source>
         <target>Texte brut</target>
       </trans-unit>
-      <trans-unit id="4c6d3e03ea15f13b7af0af038c1610ffafc57c18" resname="widget.text.new.action.label">
+      <trans-unit id="58893b8eccdeb" resname="widget.text.new.action.label">
         <source>widget.text.new.action.label</source>
         <target>Texte brut</target>
       </trans-unit>
-      <trans-unit id="1bd03bc55be6f2588f11f80fb0d3af38459d6d79" resname="widget_text.form.content.label">
+      <trans-unit id="58893b8eccdf4" resname="widget_text.form.content.label">
         <source>widget_text.form.content.label</source>
         <target>Texte</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="58893b8ecce03">
         <source>widget_text.form.excerpt.label</source>
         <target>Tronquer le texte</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="58893b8ecce12">
         <source>widget_text.form.excerpt.placeholder</source>
         <target>Entrez un nombre ou laissez vide pour désactiver le tronquage</target>
       </trans-unit>
