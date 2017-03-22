@@ -1,13 +1,11 @@
 {
-    "name": "friendsofvictoire/text-widget",
+    "name": "victoire/text-widget",
     "type": "symfony-bundle",
-    "description": "Victoire DCMS Text widget",
+    "description": "Victoire Text widget",
     "keywords": [
-        "DCMS",
         "Victoire",
-        "widget",
-        "FriendsofVictoire",
-        "Text"
+        "Text",
+        "Widget",
     ],
     "license": "MIT",
     "authors": [
@@ -21,9 +19,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "symfony/framework-bundle": "~2.8|~3.0",
-        "victoire/victoire": ">=2.0.0"
+        "victoire/victoire": "~2.3"
     },
     "autoload": {
         "psr-0": {
