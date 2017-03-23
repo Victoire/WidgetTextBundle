@@ -26,6 +26,5 @@
             "Victoire\\Widget\\TextBundle": ""
         }
     },
-    "target-dir": "Victoire/Widget/TextBundle",
-    "minimum-stability": "dev"
+    "target-dir": "Victoire/Widget/TextBundle"
 }
