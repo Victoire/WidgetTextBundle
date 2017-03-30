@@ -1,6 +1,9 @@
 machine:
   timezone:
     Europe/Paris
+  hosts:
+    fr.victoire.io: 127.0.0.1
+    en.victoire.io: 127.0.0.1
   services:
     - redis
   php:
