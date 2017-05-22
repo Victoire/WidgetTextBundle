@@ -1,7 +1,7 @@
 victoire_core:
     widgets:
         Text:
-            class: "Victoire\Widget\TextBundle\\Entity\\WidgetText"
+            class: Victoire\Widget\TextBundle\Entity\WidgetText
             name: Text
 
 jms_translation:
